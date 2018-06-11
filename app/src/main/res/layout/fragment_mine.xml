@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <include
+       layout="@layout/head_bar"
+       />
+   <LinearLayout
+       android:layout_margin="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:src="@mipmap/header_icon_1"
+          android:layout_width="50dp"
+          android:layout_height="50dp" />
+      <TextView
+          android:clickable="true"
+          android:id="@+id/fragment_mine_douyin"
+          android:layout_marginLeft="50dp"
+          android:gravity="center_vertical"
+          android:text="我的抖音"
+          android:textStyle="bold"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="50dp" />
+
+   </LinearLayout>
+
+</LinearLayout>

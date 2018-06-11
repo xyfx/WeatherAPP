@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+   <TextView
+       android:id="@+id/head_bar_return"
+       android:layout_margin="10dp"
+       android:text="←"
+       android:textStyle="bold"
+       android:textColor="@color/white"
+       android:textSize="30sp"
+       android:clickable="true"
+       android:gravity="center"
+       android:layout_width="40dp"
+       android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/head_bar_name"
+        android:text="@string/city_select"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

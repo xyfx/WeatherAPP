@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/head_add"
+        android:textColor="@color/white"
+        android:layout_marginTop="0dp"
+        android:text="@string/add"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/head_city_area"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/head_add"
+        android:drawablePadding="5dp"
+        android:text="@string/head_city_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/head_city"
+        android:layout_below="@id/head_city_area"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:paddingLeft="33dp"
+        android:text="@string/head_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/head_temperature"
+        android:layout_marginLeft="10dp"
+        android:textSize="65sp"
+        android:layout_marginTop="30dp"
+        android:text="@string/head_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_city_area"
+        />
+    <TextView
+        android:id="@+id/head_weath_desc"
+        android:textColor="@color/white"
+        android:layout_marginTop="70dp"
+        android:text="@string/head_weath_desc"
+        android:layout_toRightOf="@id/head_temperature"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@mipmap/select_location_default"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/select_location"
+        android:scaleType="fitCenter"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

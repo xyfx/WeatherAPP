@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">智识天气</string>
+    <string name="head_city_area">龙岗区 大同街</string>
+    <string name="head_city">深圳市</string>
+    <string name="head_temperature">29℃</string>
+    <string name="head_weath_desc">多云</string>
+    <string name="weather_cast">天气预报</string>
+    <string name="forcast_time">日期</string>
+    <string name="forcast_type">多云</string>
+    <string name="forcast_max_temperature">最高温度</string>
+    <string name="forcast_min_temperature">最低温度</string>
+    <string name="forcast_suggest">生活建议</string>
+    <string name="returns">返回</string>
+    <string name="city_select">城市选择</string>
+    <string name="city_hot_select_default">热门城市</string>
+    <string name="add">+</string>
+    <string name="search_hint">搜索全国城市</string>
+    <string name="main_weather_name">天气</string>
+</resources>

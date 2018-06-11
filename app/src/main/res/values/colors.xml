@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34A2F7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#55ff</color>
+    <color name="colorPet">#f2473d</color>
+    <color name="transparents">#00000000</color>
+    <color name="color9">#999999</color>
+    <color name="videbg">#767785</color>
+</resources>
