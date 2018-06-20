@@ -8,11 +8,14 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import lp.weather.zm.weatherobservable.fragment.BeautyPicFragment;
 import lp.weather.zm.weatherobservable.fragment.MineFragment;
 import lp.weather.zm.weatherobservable.fragment.WeatherFragment;
 import lp.weather.zm.weatherobservable.services.MusicServices;
+
+import static lp.weather.zm.weatherobservable.fragment.MineFragment.REQUEST_QR_CODE;
 
 /**
  * Created by ASUS on 2018/5/24.
@@ -157,5 +160,17 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void onDestroy() {
         super.onDestroy();
         stopService(intentMusic);
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK
+                && requestCode == REQUEST_QR_CODE
+                && data != null) {
+            String result = data.getStringExtra("result");
+            Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+        }
     }
 }
