@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import io.github.xudaojie.qrcodelib.CaptureActivity;
 import lp.weather.zm.weatherobservable.R;
 import lp.weather.zm.weatherobservable.ViewPagerLayoutManagerActivity;
 import lp.weather.zm.weatherobservable.services.MusicServices;
@@ -20,7 +21,9 @@ import lp.weather.zm.weatherobservable.services.MusicServices;
 
 public class MineFragment extends Fragment implements View.OnClickListener{
     View rootView;
-    TextView headBarReturn,headBarName,tvDouYin;
+    TextView headBarReturn,headBarName,tvDouYin,tvScan;
+    public static final int REQUEST_QR_CODE=100;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -40,6 +43,8 @@ public class MineFragment extends Fragment implements View.OnClickListener{
        headBarReturn=rootView.findViewById(R.id.head_bar_return);
        tvDouYin=rootView.findViewById(R.id.fragment_mine_douyin);
        tvDouYin.setOnClickListener(this);
+       tvScan=rootView.findViewById(R.id.fragment_mine_scan);
+       tvScan.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +52,9 @@ public class MineFragment extends Fragment implements View.OnClickListener{
        if(v==tvDouYin){
            startActivity(new Intent(getActivity(), ViewPagerLayoutManagerActivity.class));
            stopMusic();
+       }else if(v==tvScan){
+           Intent i = new Intent(getContext(), CaptureActivity.class);
+           getActivity().startActivityForResult(i, REQUEST_QR_CODE);
        }
     }
 
